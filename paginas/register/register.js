@@ -1,3 +1,9 @@
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+        window.location.href = '../home/home.html';
+    }
+});
+
 function onchangeEmail() {
     const email = form.email().value;
     form.emailInvalidError().style.display = validateEmail(email) ? 'none' : 'block';
