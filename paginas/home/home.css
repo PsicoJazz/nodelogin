@@ -61,6 +61,15 @@ button:active{
     border-radius: 6px;
 }
 
+.logout{
+    background-color:#bea309;
+    border-radius: 6px;
+    margin-top: 20px;
+    width: 60px;
+    font-size: 11px;
+    text-align: center;
+}
+
 input{
     display:block;
     margin:10px auto;

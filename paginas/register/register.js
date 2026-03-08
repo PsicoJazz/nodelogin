@@ -31,20 +31,25 @@ function register() {
     const password = form.password().value;
     const confirmPassword = form.confirmPassword().value;
 
-    if (!email) {
-        alert("Digite um email");
-        return;
-    }
-    if (password.length < 6) {
-        form.passwordError().style.display = 'block';
-        return;
-    }
-    if (password !== confirmPassword) {
-        form.confirmPasswordError().style.display = 'block';
-        return;
-    }
-    alert("Usuário registrado com sucesso!");
+    firebase.auth().createUserWithEmailAndPassword(email, password)
+
+    .then(() => {
+        window.location.href = '../../paginas/home/home.html';
+    })
+
+    .catch(error => {
+        alert(getErrorMessage(error));
+    });
+
 }
+
+function getErrorMessage(error) {
+    if (error.code === 'auth/email-already-in-use') {
+        return 'O email já está em uso. Por favor, tente outro.';
+    }
+    return error.message;
+}
+
 
 function togglePasswordVisibility() {
     const password = document.getElementById("password");

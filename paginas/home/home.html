@@ -30,6 +30,10 @@
 
 </div>
 
+ <div>
+      <button type="button" class="logout" onclick="logout()">Logout</button>
+ </div>
+
 </form><br>
 
 <h3>Lista de Vendas</h3><br>
@@ -38,11 +42,12 @@
 
 <thead>
 <tr>
+<th>ID</th>
 <th>Cliente</th>
 <th>Produto</th>
 <th>Data</th>
 <th>Preço</th>
-<th>Ações</th>
+<th>Pagamento</th>
 </tr>
 </thead>
 
@@ -53,4 +58,10 @@
 
 
 </body>
+
+<script src="https://www.gstatic.com/firebasejs/12.10.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/12.10.0/firebase-auth-compat.js"></script>
+<script src="../../firebase-init.js"></script>
+<script src="home.js"></script>
+
 </html>
