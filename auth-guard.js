@@ -1,5 +1,9 @@
 firebase.auth().onAuthStateChanged(function(user) {
-    if (!user) {
-        window.location.href = '../../index.html';
-    }
+    setTimeout(() => {
+        if (!user) {
+            window.location.href = '/index.html';
+        } else {
+            console.log("Usuário logado:", user.email);
+        }
+    }, 100); // espera 100ms
 });

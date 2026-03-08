@@ -110,3 +110,4 @@ function register() {
 form.entrar().addEventListener('click', login);
 form.registrar().addEventListener('click', register);
 form.esqueci().addEventListener('click', recoverPassword);
+
