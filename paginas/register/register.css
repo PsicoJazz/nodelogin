@@ -1,0 +1,12 @@
+body {
+
+}
+
+.voltar{
+    background-color: #b68808;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
