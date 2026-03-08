@@ -18,17 +18,17 @@
 
   <form>
 
-    <div>
-  <label for="email"><b>Email:</b></label><br>
-  <input type="email" id="email" name="email" oninput="validateFields()" placeholder="seu@email.com" required>
-  <div class="error email-error">Email é inválido</div>
-</div>
+  <div>
+    <label for="email"><b>Email:</b></label><br>
+    <input type="email" id="email" name="email" oninput="validateFields()" placeholder="seu@email.com" required>
+    <div class="error" id="email-error">Email é inválido</div>
+  </div>
 
-<label for="password"><b>Senha:</b></label><br>
-<input type="password" id="password" name="password" oninput="validateFields()" placeholder="sua senha" required>
-<span class="eye" onclick="togglePasswordVisibility(); return false;">👁</span>
+    <label for="password"><b>Senha:</b></label><br>
+    <input type="password" id="password" name="password" oninput="validateFields()" placeholder="sua senha" required>
+    <span class="eye" onclick="togglePasswordVisibility(); return false;">👁</span>
+  <div class="error" id="password-error">A senha é inválida</div>
 
-<div class="error password-error">A senha é inválida</div>
     <div>
       <button type="button" class="entrar" onclick="login()">Entrar</button>
       <button type="button" class="registrar" onclick="register()">Registrar</button>
