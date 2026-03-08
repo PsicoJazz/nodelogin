@@ -85,10 +85,10 @@ function getErrorMessage(error) {
     if (error.code == 'auth/invalid-credential') {
         return 'Usuário não encontrado. Verifique o email e a senha e tente novamente.';
     }
-    return error.message;
+    if (error.code == 'auth/invalid-email') {
+        return 'Email inválido. Verifique o email e tente novamente.';
     }
-    if (error.code == 'auth/wrong-password') {
-        return 'Senha incorreta. Verifique o email e a senha e tente novamente.';
+    return error.message;
     }
 }
   
@@ -96,5 +96,4 @@ function register() {
     window.location.href = 'paginas/register/register.html';
 
 }
-
 
