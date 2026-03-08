@@ -1,0 +1,83 @@
+/* style.css */
+body {
+    background-color: #92d896;
+    font-family: Arial, sans-serif;
+    
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+
+h2{
+    color: #333;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+.botoes{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+button{
+    padding:10px 15px;
+    border:none;
+    color:white;
+    cursor:pointer;
+    text-align:center;
+}
+
+.botoes
+button:active{
+    transform: scale(0.90);
+}
+
+/* salvar */
+.btn-salvar{
+    background-color:#0e7011;
+    border-radius: 6px;
+    }
+}
+
+/* alterar */
+.btn-alterar{
+    background-color:#0e3870;
+    border-radius: 6px;
+}
+
+/* deletar */
+.btn-deletar{
+    background-color:red;
+    border-radius: 6px;
+}
+
+input{
+    display:block;
+    margin:10px auto;
+    padding:10px;
+    width:200px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+tr:hover{
+    background-color:#f2f2f2;
+}
